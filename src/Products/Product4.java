@@ -8,29 +8,36 @@ package Products;
  * Срок кредита- до 30 лет
  * Первоначальный взнос от 20%
  * Первоначальный взнос
+ *
+ *
 
  Срок кредита
 
               до 10 лет (включ.)     от 10 до 20 лет (включ.)  от 20 до 30 лет (включ.)
 
-
- от 50%         11,50%                  11,75%                  12,00%
-
- от 30 до 50%    11,75%                  12,00%                 12,25%
-
- от 20 до 30%     12,00%                 12,25%                   12,50%
+                 12,00%                 12,25%                   12,50%
  *
  */
 
 
-public class Product4 extends Product{
-    /** Создает новый пустой объект
-     * @see Product4#Product4()
-     */
-    public Product4() {
-        double percent = 12.25;
-        p = percent / (12 * 100);
+public class Product4 extends Product {
 
-
+    @Override
+    protected double Check(int s, int monthCount) {
+        if (s < 300000) {
+            System.out.println("Сумма несоответствует допустимому интервалу");
+            System.out.println("Мин. сумма кредита:  300 тыс.");
+        }
+            if (monthCount < 120) {
+                double percent = 12.0;
+            } else if (monthCount >= 120 && monthCount < 240) {
+                double percent = 12.25;
+            } else if (monthCount >= 240 && monthCount < 360) {
+                double percent = 12.5;
+            }
+            return percent;
+        }
     }
-}
+
+
+

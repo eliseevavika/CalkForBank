@@ -13,13 +13,13 @@ package Products;
  */
 
 public class Product2 extends Product {
+    double percent = 12.0;
 
-    /** Создает новый пустой объект
-     * @see Product2#Product2()
-     */
-    public Product2() {
-        double percent = 12.0;
-        p = percent / (12 * 100);
-        monthCount = 120;
+    @Override
+    protected double Check(int s, int monthCount) {
+        if (monthCount > 132) {
+            System.out.println("Срок кредитования по данному продукту— не более 11 лет");
+        }
+return percent;
     }
 }

@@ -16,19 +16,23 @@ package Products;
 
  */
 
+public class Product1 extends Product {
 
 
-public class Product1 extends Product{
-
-    /** Создает новый пустой объект
-     * @see Product1#Product1()
-     */
-    public Product1() {
-        double percent = 14.9;
-        p = percent / (12 * 100);
-
-
-
-
+    @Override
+    protected double Check(int s, int monthCount) {
+        if (s < 15000 || s > 1500000) {
+            System.out.println("Сумма несоответствует допустимому интервалу");
+            System.out.println("Мин. сумма кредита:  15 000");
+            System.out.println("Макс. сумма кредита:  1 500 000");
+            return 0.0;//не знаю как написать,чтобы вводили суммму еще раз и прошел весь процесс
+        } else {
+            if (monthCount >= 3 && monthCount <= 24) {
+                double percent = 14.9;
+            } else if (monthCount >= 25 && monthCount <= 60) {
+                double percent = 15.9;
+            }
+            return percent;
+        }
     }
 }

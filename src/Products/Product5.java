@@ -10,20 +10,33 @@ package Products;
  *
  * Срок кредита
 
- до 10 лет (включ.)               от 10 до 20 лет (включ.)    от 20 до 30 лет (включ.)
+                    до 10 лет (включ.)               от 10 до 20 лет (включ.)    от 20 до 30 лет (включ.)
 
-
- от 50%         11,50%                  11,75%                  12,00%
-
- от 30 до 50%    11,75%                  12,00%                 12,25%
-
- от 20 до 30%     12,00%                 12,25%                   12,50%
+                     12,00%                             12,25%                   12,50%
  * +0,5% - если вы не получаете зарплату в Банке, а приобретаемое жилье построено без участия кредитных средств Банка
  */
 public class Product5 extends Product {
     public Product5() {
         double percent = 12.5;
         p = percent / (12 * 100);
-
     }
+
+    @Override
+    protected double Check(int s, int monthCount) {
+        if (s < 300000) {
+            System.out.println("Сумма несоответствует допустимому интервалу");
+            System.out.println("Мин. сумма кредита: 300 тыс.");
+
+          //не знаю как написать,чтобы вводили суммму еще раз и прошел весь процесс
+        } else {
+            if (monthCount < 120) {
+                double percent = 12.5;
+            } else if (monthCount >= 120 && monthCount < 240) {
+                double percent = 12.75;
+            } else if (monthCount >= 240 && monthCount < 360) {
+                double percent = 13;
+            }
+        }
+            return percent;
+        }
 }

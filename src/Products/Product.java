@@ -3,11 +3,14 @@ package Products;
 /**
  Аннуитетный платеж – вариант ежемесячного платежа по кредиту, когда размер ежемесячного платежа остаётся постоянным на всём периоде кредитования.
  */
-public class Product {
+public abstract class Product {
     protected double p;// месячная процентная ставка по кредиту (= годовая ставка/12 месяцев),
     protected int monthCount;//количество периодов, в течение которых выплачивается кредит.
+    protected double percent; //ставка по кредиту за год
+    protected  abstract double   Check(int s, int monthCount);
 
     public double annuityPayment(int s, int monthCount) {
+        p = percent / (12 * 100);
         return s * (p + p / (Math.pow(1 + p, monthCount) - 1));//аннуитентный расчет
     }
 
@@ -31,6 +34,8 @@ public class Product {
         }
 return 1.1;
         }
+
+
     }
 
 

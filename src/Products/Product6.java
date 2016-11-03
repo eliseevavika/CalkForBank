@@ -6,10 +6,18 @@ package Products;
  15,5% - 17,0% годовых в рублях
  срок кредита от 3 до 60 месяцев*
  */
-public class Product6 extends Product{
-    public Product6() {
-        double percent = 15.5;
-        p = percent / (12 * 100);
+public class Product6 extends Product {
+   double percent = 15.5;
 
+    @Override
+    protected double Check(int s, int monthCount) {
+        if (s < 45000||s>5000000 ) {
+            System.out.println("Сумма несоответствует допустимому интервалу");
+            System.out.println("Мин. сумма кредита: 45 тыс.");
+            System.out.println("Макс. сумма кредита: 5 млн.");
+
+            //не знаю как написать,чтобы вводили суммму еще раз и прошел весь процесс
+        }
+        return percent;
     }
 }
