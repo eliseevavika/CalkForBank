@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Products/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44951922" vertical-offset="153" max-vertical-offset="1173">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="961" max-vertical-offset="1428">
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,51 +39,8 @@
       <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Products/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-              <folding>
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product3.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Products/Product3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="544">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product4.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Products/Product4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product5.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Products/Product5.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product6.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Products/Product6.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="714">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/Products/Product1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-              <caret line="24" column="7" selection-start-line="22" selection-start-column="3" selection-end-line="24" selection-end-column="7" />
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -102,8 +59,48 @@
       <file leaf-file-name="Product2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Products/Product2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="527">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Products/Product3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product4.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Products/Product4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="714">
+              <caret line="32" column="0" selection-start-line="29" selection-start-column="3" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product5.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Products/Product5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
+              <caret line="27" column="5" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product6.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Products/Product6.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.53125" vertical-offset="0" max-vertical-offset="416">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -116,9 +113,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/Products/Product.java" />
-        <option value="$PROJECT_DIR$/src/Products/Product1.java" />
         <option value="$PROJECT_DIR$/src/Products/Product2.java" />
+        <option value="$PROJECT_DIR$/src/Products/Product1.java" />
         <option value="$PROJECT_DIR$/src/Products/Product3.java" />
+        <option value="$PROJECT_DIR$/src/Products/Product4.java" />
+        <option value="$PROJECT_DIR$/src/Products/Product5.java" />
+        <option value="$PROJECT_DIR$/src/Products/Product6.java" />
         <option value="$PROJECT_DIR$/src/Products/Main.java" />
       </list>
     </option>
@@ -468,12 +468,12 @@
       <created>1478062720578</created>
       <option name="number" value="Default" />
       <updated>1478062720578</updated>
-      <workItem from="1478062723802" duration="13792000" />
+      <workItem from="1478062723802" duration="17488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13792000" />
+    <option name="totallyTimeSpent" value="17488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1311" height="784" extended-state="6" />
@@ -572,69 +572,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Products/Product4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Products/Product5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Products/Product6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Products/Product1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <caret line="24" column="7" selection-start-line="22" selection-start-column="3" selection-end-line="24" selection-end-column="7" />
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Products/Product2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="18" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="527">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Products/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-          <folding>
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Products/Product3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="544">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="714">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Products/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44951922" vertical-offset="153" max-vertical-offset="1173">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="961" max-vertical-offset="1428">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Products/Product3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Products/Product4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="714">
+          <caret line="32" column="0" selection-start-line="29" selection-start-column="3" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Products/Product5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
+          <caret line="27" column="5" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Products/Product6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53125" vertical-offset="0" max-vertical-offset="416">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding />
         </state>
       </provider>

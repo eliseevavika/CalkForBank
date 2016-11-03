@@ -20,7 +20,7 @@ public class Product3 extends Product {
         double percent = 11.4;
 
         p = percent / (12 * 100);
-        monthCount = 60;
+
 
     }
 }

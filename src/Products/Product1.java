@@ -25,9 +25,9 @@ public class Product1 extends Product{
      */
     public Product1() {
         double percent = 14.9;
-
         p = percent / (12 * 100);
-        monthCount = 6;
+
+
 
 
     }

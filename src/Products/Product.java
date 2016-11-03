@@ -7,7 +7,7 @@ public class Product {
     protected double p;// месячная процентная ставка по кредиту (= годовая ставка/12 месяцев),
     protected int monthCount;//количество периодов, в течение которых выплачивается кредит.
 
-    public double annuityPayment(int s) {
+    public double annuityPayment(int s, int monthCount) {
         return s * (p + p / (Math.pow(1 + p, monthCount) - 1));//аннуитентный расчет
     }
 
@@ -22,7 +22,7 @@ public class Product {
      *
      * @return
      */
-    public double differentiatPayment(int s) {
+    public double differentiatPayment(int s, int monthCount) {
         int principalDiff = s / monthCount; // основной платеж
         for (int i = 0; i < monthCount; i++) {
             System.out.println("Размер выплаты:");
