@@ -21,10 +21,9 @@ public abstract class Product {
 
     /**
      * @param s
-     * @param monthCount
      * @return сумму выплаты за 1 месяц
      */
-    public double annuityPayment(int s, int monthCount) {
+    public double annuityPayment(int s) {
         p = percent / (12 * 100);
         return s * (p + p / (Math.pow(1 + p, monthCount) - 1));
     }
@@ -38,7 +37,7 @@ public abstract class Product {
      * @param s, где s-желаемая сумма
      * @return
      */
-    public double differentiatPayment(int s, int monthCount) {
+    public double differentiatPayment(int s) {
         int principalDiff = s / monthCount; // основной платеж
         for (int i = 0; i < monthCount; i++) {
             System.out.println("Размер выплаты:");
@@ -48,7 +47,7 @@ public abstract class Product {
         return 1.1;
     }
 
-
+    public abstract void printConditions(int sum);
 }
 
 

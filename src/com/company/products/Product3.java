@@ -13,16 +13,27 @@ package com.company.products;
 
 
 public class Product3 extends Product {
-    double percent = 11.4;
+
+    public Product3() {
+        percent = 11.4;
+    }
 
     @Override
-    protected double isValid(int s, int monthCount) {
+    protected boolean isValid(int s, int monthCount) {
         if (s < 300000 || s > 3000000) {
             System.out.println("Сумма несоответствует допустимому интервалу");
             System.out.println("Мин. сумма кредита:  300 тыс.");
             System.out.println("Макс. сумма кредита: 3 млн.");
-            return 0.0;//не знаю как написать,чтобы вводили суммму еще раз и прошел весь процесс
+           return  false;
         }
-        return percent;
+        return true;
+    }
+    @Override
+    public void printConditions(int sum) {
+
+        System.out.println("Потребительский кредит (аннуитентная схема): " + annuityPayment(sum));
+        System.out.println();
+        System.out.println("Потребительский кредит (дифференцированная схема):");
+        System.out.println("Потребительский кредит: " + differentiatPayment(sum));
     }
 }

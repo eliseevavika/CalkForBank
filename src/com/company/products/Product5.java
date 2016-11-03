@@ -17,27 +17,25 @@ package com.company.products;
  * +0,5% - если вы не получаете зарплату в Банке, а приобретаемое жилье построено без участия кредитных средств Банка
  */
 public class Product5 extends Product {
-    public Product5() {
-        double percent = 12.5;
-        p = percent / (12 * 100);
+    public Product5(int monthCount) {
+        if (monthCount < 120) {
+             percent = 12.5;
+        }
+        else if (monthCount >= 120 && monthCount < 240) {
+            percent = 12.75;
+        } else if (monthCount >= 240 && monthCount < 360) {
+           percent = 13;
+        }
     }
 
     @Override
-    protected double isValid(int s, int monthCount) {
+    protected boolean isValid(int s, int monthCount) {
         if (s < 300000) {
             System.out.println("Сумма несоответствует допустимому интервалу");
             System.out.println("Мин. сумма кредита: 300 тыс.");
 
-            //не знаю как написать,чтобы вводили суммму еще раз и прошел весь процесс
-        } else {
-            if (monthCount < 120) {
-                double percent = 12.5;
-            } else if (monthCount >= 120 && monthCount < 240) {
-                double percent = 12.75;
-            } else if (monthCount >= 240 && monthCount < 360) {
-                double percent = 13;
-            }
+          return false;
         }
-        return percent;
+        return true;
     }
 }

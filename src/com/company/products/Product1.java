@@ -18,6 +18,7 @@ public class Product1 extends Product {
 
 
     public Product1(int monthCount) {
+        this.monthCount=monthCount;
         if (monthCount >= 3 && monthCount <= 24) {
             this.percent = 14.9;
         } else if (monthCount >= 25 && monthCount <= 60) {
@@ -34,5 +35,14 @@ public class Product1 extends Product {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public void printConditions(int sum) {
+
+        System.out.println("Потребительский кредит (аннуитентная схема): " + annuityPayment(sum));
+        System.out.println();
+        System.out.println("Потребительский кредит (дифференцированная схема):");
+        System.out.println("Потребительский кредит: " + differentiatPayment(sum));
     }
 }

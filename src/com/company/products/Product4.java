@@ -22,20 +22,24 @@ package com.company.products;
 
 public class Product4 extends Product {
 
+    public Product4(int monthCount) {
+        if (monthCount < 120) {
+            percent = 12.0;
+        } else if (monthCount >= 120 && monthCount < 240) {
+             percent = 12.25;
+        } else if (monthCount >= 240 && monthCount < 360) {
+             percent = 12.5;
+        }
+    }
+
     @Override
-    protected double isValid(int s, int monthCount) {
+    protected boolean isValid(int s, int monthCount) {
         if (s < 300000) {
             System.out.println("Сумма несоответствует допустимому интервалу");
             System.out.println("Мин. сумма кредита:  300 тыс.");
+            return false;
         }
-        if (monthCount < 120) {
-            double percent = 12.0;
-        } else if (monthCount >= 120 && monthCount < 240) {
-            double percent = 12.25;
-        } else if (monthCount >= 240 && monthCount < 360) {
-            double percent = 12.5;
-        }
-        return percent;
+        return true;
     }
 }
 

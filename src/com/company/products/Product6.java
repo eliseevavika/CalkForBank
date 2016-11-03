@@ -7,17 +7,20 @@ package com.company.products;
  * срок кредита от 3 до 60 месяцев*
  */
 public class Product6 extends Product {
-    double percent = 15.5;
+
+    public Product6() {
+        percent = 15.5;
+    }
 
     @Override
-    protected double isValid(int s, int monthCount) {
+    protected boolean isValid(int s, int monthCount) {
         if (s < 45000 || s > 5000000) {
             System.out.println("Сумма несоответствует допустимому интервалу");
             System.out.println("Мин. сумма кредита: 45 тыс.");
             System.out.println("Макс. сумма кредита: 5 млн.");
 
-            //не знаю как написать,чтобы вводили суммму еще раз и прошел весь процесс
+          return  false;
         }
-        return percent;
+        return true;
     }
 }
