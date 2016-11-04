@@ -13,13 +13,24 @@ package com.company.products;
  */
 
 public class Product2 extends Product {
-
+    /**
+     * Конструктор - создание нового объекта с определенными значениями
+     * @param monthCount - количество периодов, в течение которых выплачивается кредит
+     * @see Product1#Product1(int monthCount)
+     * */
 
     public Product2(int monthCount) {
         this.monthCount = monthCount;
         percent = 12.0;
     }
 
+    /**
+     * Проверка переданных параметров на Валидность
+     * @param s - сумму выплаты за 1 месяц
+     * @param monthCount - количество периодов, в течение которых выплачивается кредит
+     * @return -проверяем правильность параметров-сумма, кол-во месяцев
+     * Возвращаем условие: правильный или неправильный параметр.
+     */
     @Override
     protected boolean isValid(int s, int monthCount) {
         if (monthCount > 132) {
@@ -29,6 +40,10 @@ public class Product2 extends Product {
         return true;
     }
 
+    /**
+     * Полная печать расчета Пользовательского кредита по аннуитентной и дифференцированной схемам.
+     * @param sum - сумму выплаты за 1 месяц
+     */
     @Override
     public void printConditions(int sum) {
 
