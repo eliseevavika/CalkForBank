@@ -2,7 +2,7 @@ package com.company.products;
 
 /**
  * Потребительский кредит
- *
+ * <p/>
  * срок до 5 лет, ставка от 14.9%, сумма до 1.5 млн руб
  * Мин. сумма кредита*  15 000
  * Макс. сумма кредита**  1 500 000
@@ -17,7 +17,8 @@ public class Product1 extends Product {
 
     /**
      * Проверка переданных параметров на Валидность
-     * @param s - сумму выплаты за 1 месяц
+     *
+     * @param s          - сумму выплаты за 1 месяц
      * @param monthCount - количество периодов, в течение которых выплачивается кредит
      * @return: проверяем правильность параметров-сумма, кол-во месяцев
      * Возвращаем условие: правильный или неправильный параметр.
@@ -35,24 +36,25 @@ public class Product1 extends Product {
 
     /**
      * Полная печать расчета Пользовательского кредита по аннуитентной и дифференцированной схемам.
+     *
      * @param sum - сумму выплаты за 1 месяц
      */
     @Override
-    public void printConditions(int sum,  int monthCount) {
+    public void printConditions(int sum, int monthCount) {
 
         double percent = countPercent(monthCount);
 
-        System.out.println("Потребительский кредит (аннуитентная схема): " + getAnnuityPayment(sum, monthCount,percent));
+        System.out.println("Потребительский кредит (аннуитентная схема): " + getAnnuityPayment(sum, monthCount, percent));
         System.out.println();
         System.out.println("Потребительский кредит (дифференцированная схема):");
-        printDifferentiatPayment(sum, monthCount,percent);
+        printDifferentiatPayment(sum, monthCount, percent);
     }
 
     private double countPercent(int monthCount) {
         if (monthCount >= 3 && monthCount <= 24) {
             return 14.9;
         } else if (monthCount >= 25 && monthCount <= 60) {
-            return  15.9;
+            return 15.9;
         }
         return 20;
     }

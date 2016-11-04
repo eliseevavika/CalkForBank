@@ -28,9 +28,9 @@ public abstract class Product {
      * @param s-желаемая сумма
      * @return
      */
-    public void printDifferentiatPayment(int s,  int monthCount, double percent) {
+    public void printDifferentiatPayment(int s, int monthCount, double percent) {
         double p = percent / (12 * 100);
-        double principalDiff = (double)s / monthCount; // основной платеж
+        double principalDiff = (double) s / monthCount; // основной платеж
         for (int i = 0; i < monthCount; i++) {
             System.out.println("Размер выплаты:");
             double result = principalDiff + (s - principalDiff * i) * p;

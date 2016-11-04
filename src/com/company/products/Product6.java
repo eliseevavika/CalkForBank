@@ -23,12 +23,13 @@ public class Product6 extends Product {
 
     @Override
     public void printConditions(int sum, int monthCount) {
-        double percent=countPercent(monthCount);
+        double percent = countPercent(monthCount);
         System.out.println("Образовательный кредит (аннуитентная схема): " + getAnnuityPayment(sum, monthCount, percent));
         System.out.println();
         System.out.println("Образовательный кредит (дифференцированная схема):");
         printDifferentiatPayment(sum, monthCount, percent);
     }
+
     private double countPercent(int monthCount) {
         return 15.5;
     }

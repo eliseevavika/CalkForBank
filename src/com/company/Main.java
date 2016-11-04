@@ -27,38 +27,38 @@ public class Main {
         System.out.println("Ваш выбор кредит с №: ");
 
 
-        Product1 product1 = new Product1(6);
-        Product2 product2 = new Product2(10);
-        Product3 product3 = new Product3(60);
-        Product4 product4 = new Product4(144);
-        Product5 product5 = new Product5(252);
-        Product6 product6 = new Product6(50);
+        Product1 product1 = new Product1();
+        Product2 product2 = new Product2();
+        Product3 product3 = new Product3();
+        Product4 product4 = new Product4();
+        Product5 product5 = new Product5();
+        Product6 product6 = new Product6();
 
 
         Scanner in = new Scanner(System.in);
         int numberCredit = in.nextInt();
         switch (numberCredit) {
             case 1:
-                product1.printConditions(100000);
+                product1.printConditions(100000, 6);
                 break;
 
             case 2:
-                product1.printConditions(100000);
+                product2.printConditions(100000, 10);
                 break;
             case 3:
-                product1.printConditions(300000);
+                product3.printConditions(300000, 60);
                 break;
 
             case 4:
-                product1.printConditions(400000);
+                product4.printConditions(400000, 144);
                 break;
 
             case 5:
-                product1.printConditions(400000);
+                product5.printConditions(400000, 252);
                 break;
 
             case 6:
-                product1.printConditions(250000);
+                product6.printConditions(250000, 50);
                 break;
             default:
                 System.out.println("Указан неверный продукт");
