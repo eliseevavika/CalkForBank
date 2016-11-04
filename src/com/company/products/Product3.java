@@ -14,11 +14,6 @@ package com.company.products;
 
 public class Product3 extends Product {
 
-    public Product3(int monthCount) {
-        percent = 11.4;
-        this.monthCount = monthCount;
-    }
-
     @Override
     protected boolean isValid(int s, int monthCount) {
         if (s < 300000 || s > 3000000) {
@@ -31,11 +26,14 @@ public class Product3 extends Product {
     }
 
     @Override
-    public void printConditions(int sum) {
-
-        System.out.println("Потребительский кредит (аннуитентная схема): " + annuityPayment(sum));
+    public void printConditions(int sum, int monthCount) {
+        double percent = countPercent(monthCount);
+        System.out.println("Потребительский кредит (аннуитентная схема): " + getAnnuityPayment(sum,monthCount, percent));
         System.out.println();
         System.out.println("Потребительский кредит (дифференцированная схема):");
-        System.out.println("Потребительский кредит: " + differentiatPayment(sum));
+         printDifferentiatPayment(sum, monthCount,percent);
+    }
+    private double countPercent(int monthCount) {
+        return  11.4;
     }
 }

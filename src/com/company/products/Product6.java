@@ -8,9 +8,6 @@ package com.company.products;
  */
 public class Product6 extends Product {
 
-    public Product6(int i) {
-        percent = 15.5;
-    }
 
     @Override
     protected boolean isValid(int s, int monthCount) {
@@ -25,10 +22,14 @@ public class Product6 extends Product {
     }
 
     @Override
-    public void printConditions(int sum) {
-        System.out.println("Образовательный кредит (аннуитентная схема): " + annuityPayment(sum));
+    public void printConditions(int sum, int monthCount) {
+        double percent=countPercent(monthCount);
+        System.out.println("Образовательный кредит (аннуитентная схема): " + getAnnuityPayment(sum, monthCount, percent));
         System.out.println();
         System.out.println("Образовательный кредит (дифференцированная схема):");
-        System.out.println("Образовательный кредит: " + differentiatPayment(sum));
+        printDifferentiatPayment(sum, monthCount, percent);
+    }
+    private double countPercent(int monthCount) {
+        return 15.5;
     }
 }

@@ -4,27 +4,18 @@ package com.company.products;
  * Аннуитетный платеж – вариант ежемесячного платежа по кредиту, когда размер ежемесячного платежа остаётся постоянным на всём периоде кредитования.
  */
 public abstract class Product {
-    /**
-     * месячная процентная ставка по кредиту (= годовая ставка/12 месяцев)
-     */
-    protected double p;
-    /**
-     * количество периодов, в течение которых выплачивается кредит
-     */
-    protected int monthCount;
-    /**
-     * ставка по кредиту за год
-     */
-    protected double percent;
+
 
     protected abstract boolean isValid(int s, int monthCount);
+
+    public abstract void printConditions(int sum, int monthCount);
 
     /**
      * @param s
      * @return сумму выплаты за 1 месяц
      */
-    public double annuityPayment(int s) {
-        p = percent / (12 * 100);
+    public double getAnnuityPayment(int s, int monthCount, double percent) {
+        double p = percent / (12 * 100);
         return s * (p + p / (Math.pow(1 + p, monthCount) - 1));
     }
 
@@ -37,17 +28,15 @@ public abstract class Product {
      * @param s-желаемая сумма
      * @return
      */
-    public double differentiatPayment(int s) {
-        int principalDiff = s / monthCount; // основной платеж
+    public void printDifferentiatPayment(int s,  int monthCount, double percent) {
+        double p = percent / (12 * 100);
+        double principalDiff = (double)s / monthCount; // основной платеж
         for (int i = 0; i < monthCount; i++) {
             System.out.println("Размер выплаты:");
-            System.out.println(i + 1 + "-месяц: " + principalDiff + (s - principalDiff * i) * p);
-
+            double result = principalDiff + (s - principalDiff * i) * p;
+            System.out.println(i + 1 + "-месяц: " + result);
         }
-        return 1.1;
     }
-
-    public abstract void printConditions(int sum);
 }
 
 

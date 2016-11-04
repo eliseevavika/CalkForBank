@@ -22,17 +22,6 @@ package com.company.products;
 
 public class Product4 extends Product {
 
-    public Product4(int monthCount) {
-        this.monthCount = monthCount;
-        if (monthCount < 120) {
-            percent = 12.0;
-        } else if (monthCount >= 120 && monthCount < 240) {
-            percent = 12.25;
-        } else if (monthCount >= 240 && monthCount < 360) {
-            percent = 12.5;
-        }
-    }
-
     @Override
     protected boolean isValid(int s, int monthCount) {
         if (s < 300000) {
@@ -44,13 +33,25 @@ public class Product4 extends Product {
     }
 
     @Override
-    public void printConditions(int sum) {
-        System.out.println("Образовательный кредит (аннуитентная схема): " + annuityPayment(sum));
+    public void printConditions(int sum, int monthCount) {
+        double percent = countPercent(monthCount);
+        System.out.println("Образовательный кредит (аннуитентная схема): " + getAnnuityPayment(sum,monthCount,percent));
         System.out.println();
         System.out.println("Образовательный кредит (дифференцированная схема):");
-        System.out.println("Образовательный кредит: " + differentiatPayment(sum));
+         printDifferentiatPayment(sum, monthCount,percent);
     }
-}
 
+    private double countPercent(int monthCount) {
+        if (monthCount < 120) {
+            return 12.0;
+        } else if (monthCount >= 120 && monthCount < 240) {
+            return 12.25;
+        } else if (monthCount >= 240 && monthCount < 360) {
+            return 12.5;
+        }
+        return  20;
+    }
+
+}
 
 

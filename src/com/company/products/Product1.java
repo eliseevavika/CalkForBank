@@ -13,20 +13,7 @@ package com.company.products;
  */
 
 public class Product1 extends Product {
-    /**
-     * Конструктор - создание нового объекта с определенными значениями
-     * @param monthCount - количество периодов, в течение которых выплачивается кредит
-     * @see Product1#Product1(int monthCount)
-     */
 
-    public Product1(int monthCount) {
-        this.monthCount = monthCount;
-        if (monthCount >= 3 && monthCount <= 24) {
-            this.percent = 14.9;
-        } else if (monthCount >= 25 && monthCount <= 60) {
-            this.percent = 15.9;
-        }
-    }
 
     /**
      * Проверка переданных параметров на Валидность
@@ -51,11 +38,22 @@ public class Product1 extends Product {
      * @param sum - сумму выплаты за 1 месяц
      */
     @Override
-    public void printConditions(int sum) {
+    public void printConditions(int sum,  int monthCount) {
 
-        System.out.println("Потребительский кредит (аннуитентная схема): " + annuityPayment(sum));
+        double percent = countPercent(monthCount);
+
+        System.out.println("Потребительский кредит (аннуитентная схема): " + getAnnuityPayment(sum, monthCount,percent));
         System.out.println();
         System.out.println("Потребительский кредит (дифференцированная схема):");
-        System.out.println("Потребительский кредит: " + differentiatPayment(sum));
+        printDifferentiatPayment(sum, monthCount,percent);
+    }
+
+    private double countPercent(int monthCount) {
+        if (monthCount >= 3 && monthCount <= 24) {
+            return 14.9;
+        } else if (monthCount >= 25 && monthCount <= 60) {
+            return  15.9;
+        }
+        return 20;
     }
 }

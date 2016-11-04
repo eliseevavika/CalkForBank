@@ -17,15 +17,6 @@ package com.company.products;
  * +0,5% - если вы не получаете зарплату в Банке, а приобретаемое жилье построено без участия кредитных средств Банка
  */
 public class Product5 extends Product {
-    public Product5(int monthCount) {
-        if (monthCount < 120) {
-            percent = 12.5;
-        } else if (monthCount >= 120 && monthCount < 240) {
-            percent = 12.75;
-        } else if (monthCount >= 240 && monthCount < 360) {
-            percent = 13;
-        }
-    }
 
     @Override
     protected boolean isValid(int s, int monthCount) {
@@ -39,11 +30,23 @@ public class Product5 extends Product {
     }
 
     @Override
-    public void printConditions(int sum) {
-        System.out.println("Образовательный кредит (аннуитентная схема): " + annuityPayment(sum));
+    public void printConditions(int sum, int monthCount) {
+        double percent=countPercent(monthCount);
+        System.out.println("Образовательный кредит (аннуитентная схема): " + getAnnuityPayment(sum,monthCount, percent));
         System.out.println();
         System.out.println("Образовательный кредит (дифференцированная схема):");
-        System.out.println("Образовательный кредит: " + differentiatPayment(sum));
+       printDifferentiatPayment(sum, monthCount, percent);
     }
 
+    private double countPercent(int monthCount) {
+        if (monthCount < 120) {
+            return 12.5;
+        } else if (monthCount >= 120 && monthCount < 240) {
+            return 12.75;
+        } else if (monthCount >= 240 && monthCount < 360) {
+            return 13;
+        }
+        return 20;
+
+    }
 }
