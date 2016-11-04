@@ -16,7 +16,7 @@ public class Product3 extends Product {
 
     public Product3(int monthCount) {
         percent = 11.4;
-        this.monthCount=monthCount;
+        this.monthCount = monthCount;
     }
 
     @Override
@@ -25,10 +25,11 @@ public class Product3 extends Product {
             System.out.println("Сумма несоответствует допустимому интервалу");
             System.out.println("Мин. сумма кредита:  300 тыс.");
             System.out.println("Макс. сумма кредита: 3 млн.");
-           return  false;
+            return false;
         }
         return true;
     }
+
     @Override
     public void printConditions(int sum) {
 

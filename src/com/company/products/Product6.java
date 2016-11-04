@@ -19,10 +19,11 @@ public class Product6 extends Product {
             System.out.println("Мин. сумма кредита: 45 тыс.");
             System.out.println("Макс. сумма кредита: 5 млн.");
 
-          return  false;
+            return false;
         }
         return true;
     }
+
     @Override
     public void printConditions(int sum) {
         System.out.println("Образовательный кредит (аннуитентная схема): " + annuityPayment(sum));

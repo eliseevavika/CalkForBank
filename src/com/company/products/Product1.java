@@ -3,7 +3,6 @@ package com.company.products;
 /**
  * Потребительский кредит
  * <p/>
- * <p/>
  * срок до 5 лет, ставка от 14.9%, сумма до 1.5 млн руб
  * <p/>
  * Мин. сумма кредита*  15 000
@@ -15,10 +14,14 @@ package com.company.products;
  */
 
 public class Product1 extends Product {
-
+    /**
+     * Конструктор - создание нового объекта с определенными значениями
+     * @param monthCount - количество периодов, в течение которых выплачивается кредит
+     * @see Product1#Product1(int monthCount)
+     */
 
     public Product1(int monthCount) {
-        this.monthCount=monthCount;
+        this.monthCount = monthCount;
         if (monthCount >= 3 && monthCount <= 24) {
             this.percent = 14.9;
         } else if (monthCount >= 25 && monthCount <= 60) {
@@ -26,6 +29,13 @@ public class Product1 extends Product {
         }
     }
 
+    /**
+     * Проверка переданных параметров на Валидность
+     * @param s - сумму выплаты за 1 месяц
+     * @param monthCount - количество периодов, в течение которых выплачивается кредит
+     * @return: проверяем правильность параметров-сумма, кол-во месяцев
+     * Возвращаем условие: правильный или неправильный параметр.
+     */
     @Override
     protected boolean isValid(int s, int monthCount) {
         if (s < 15000 || s > 1500000) {
@@ -37,6 +47,10 @@ public class Product1 extends Product {
         return true;
     }
 
+    /**
+     * Полная печать расчета Пользовательского кредита по аннуитентной и дифференцированной схемам.
+     * @param sum - сумму выплаты за 1 месяц
+     */
     @Override
     public void printConditions(int sum) {
 

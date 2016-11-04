@@ -19,12 +19,11 @@ package com.company.products;
 public class Product5 extends Product {
     public Product5(int monthCount) {
         if (monthCount < 120) {
-             percent = 12.5;
-        }
-        else if (monthCount >= 120 && monthCount < 240) {
+            percent = 12.5;
+        } else if (monthCount >= 120 && monthCount < 240) {
             percent = 12.75;
         } else if (monthCount >= 240 && monthCount < 360) {
-           percent = 13;
+            percent = 13;
         }
     }
 
@@ -34,7 +33,7 @@ public class Product5 extends Product {
             System.out.println("Сумма несоответствует допустимому интервалу");
             System.out.println("Мин. сумма кредита: 300 тыс.");
 
-          return false;
+            return false;
         }
         return true;
     }

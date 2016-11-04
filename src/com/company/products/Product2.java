@@ -16,7 +16,7 @@ public class Product2 extends Product {
 
 
     public Product2(int monthCount) {
-        this.monthCount=monthCount;
+        this.monthCount = monthCount;
         percent = 12.0;
     }
 
@@ -24,10 +24,11 @@ public class Product2 extends Product {
     protected boolean isValid(int s, int monthCount) {
         if (monthCount > 132) {
             System.out.println("Срок кредитования по данному продукту— не более 11 лет");
-            return  false;
+            return false;
         }
         return true;
     }
+
     @Override
     public void printConditions(int sum) {
 

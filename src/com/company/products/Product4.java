@@ -23,13 +23,13 @@ package com.company.products;
 public class Product4 extends Product {
 
     public Product4(int monthCount) {
-        this.monthCount=monthCount;
+        this.monthCount = monthCount;
         if (monthCount < 120) {
             percent = 12.0;
         } else if (monthCount >= 120 && monthCount < 240) {
-             percent = 12.25;
+            percent = 12.25;
         } else if (monthCount >= 240 && monthCount < 360) {
-             percent = 12.5;
+            percent = 12.5;
         }
     }
 
