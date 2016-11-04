@@ -26,9 +26,11 @@ public abstract class Product {
      * @param monthCount  кол-во месяцев
      */
     public void printConditions(int sum, int monthCount) {
-        double percent = countPercent(monthCount);
-        printAnnuityPayment(sum, monthCount, percent);
-        printDifferentiatPayment(sum, monthCount, percent);
+        if (isValid(sum, monthCount)) {
+            double percent = countPercent(monthCount);
+            printAnnuityPayment(sum, monthCount, percent);
+            printDifferentiatPayment(sum, monthCount, percent);
+        }
     }
 
     /**
@@ -43,7 +45,7 @@ public abstract class Product {
     public void printAnnuityPayment(int s, int monthCount, double percent) {
         double p = percent / (12 * 100);
         double result = s * (p + p / (Math.pow(1 + p, monthCount) - 1));
-        System.out.println("Потребительский кредит (аннуитентная схема): ");
+        System.out.println("Аннуитентная схема: ");
         System.out.println(result);
 
     }
@@ -60,7 +62,7 @@ public abstract class Product {
     public void printDifferentiatPayment(int s, int monthCount, double percent) {
         double p = percent / (12 * 100);
         double principalDiff = (double) s / monthCount; // основной платеж
-        System.out.println("Потребительский кредит (дифференцированная схема):");
+        System.out.println("Дифференцированная схема:");
         for (int i = 0; i < monthCount; i++) {
             System.out.println("Размер выплаты:");
             double result = principalDiff + (s - principalDiff * i) * p;

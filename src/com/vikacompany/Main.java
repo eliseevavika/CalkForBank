@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * @version 1.0
- * @autor Eliseeva Vika
+ * @author Eliseeva Vika
  */
 
 public class Main {

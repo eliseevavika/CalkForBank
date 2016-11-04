@@ -5,30 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085b52f4-82f0-4671-a776-0e3195f6358e" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\src\com\company\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\src\com\company\products\Product.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\src\com\company\products\Product1.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\src\com\company\products\Product2.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\src\com\company\products\Product3.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\src\com\company\products\Product4.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\src\com\company\products\Product5.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\src\com\company\products\Product6.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/Main.html" afterPath="$PROJECT_DIR$/javadoc/com/company/Main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/class-use/Main.html" afterPath="$PROJECT_DIR$/javadoc/com/company/class-use/Main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/Product.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/Product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/Product1.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/Product1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product1.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/Product2.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/Product2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product2.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/Product3.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/Product3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product3.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/Product4.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/Product4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product4.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/Product5.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/Product5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product5.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/Product6.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/Product6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product6.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/class-use/Product6.html" />
+      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\out\production\CalcForBank\com\company\Main.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\out\production\CalcForBank\com\company\products\Product.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\out\production\CalcForBank\com\company\products\Product1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\out\production\CalcForBank\com\company\products\Product2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\out\production\CalcForBank\com\company\products\Product3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\out\production\CalcForBank\com\company\products\Product4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\out\production\CalcForBank\com\company\products\Product5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Виктория\IdeaProjects\CalcForBank\out\production\CalcForBank\com\company\products\Product6.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/Main.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/Main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/class-use/Main.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/class-use/Main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vikacompany/Main.java" afterPath="$PROJECT_DIR$/src/com/vikacompany/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vikacompany/products/Product.java" afterPath="$PROJECT_DIR$/src/com/vikacompany/products/Product.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product1.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product1.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product2.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product2.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product3.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product3.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product4.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product4.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product5.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product5.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product6.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/Product6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product6.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/class-use/Product6.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/constant-values.html" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" />
@@ -37,13 +39,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index.html" afterPath="$PROJECT_DIR$/javadoc/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/overview-frame.html" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/com/company/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/package-list" afterPath="$PROJECT_DIR$/javadoc/package-list" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/com/company/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/package-use.html" afterPath="$PROJECT_DIR$/javadoc/com/company/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/company/products/package-use.html" afterPath="$PROJECT_DIR$/javadoc/com/company/products/package-use.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/package-use.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/package-use.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/com/vikacompany/products/package-use.html" afterPath="$PROJECT_DIR$/javadoc/com/vikacompany/products/package-use.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CalcForBank.iws" />
@@ -70,11 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/vikacompany/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="503" max-vertical-offset="1292">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.47103274" vertical-offset="0" max-vertical-offset="1292">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +86,8 @@
       <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="606" max-vertical-offset="1326">
-              <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1360">
+              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -95,8 +96,8 @@
       <file leaf-file-name="Product1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="646">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -148,11 +149,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product6.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Product6.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5566751" vertical-offset="0" max-vertical-offset="527">
-              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+              <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
               <folding>
                 <element signature="e#652#653#0" expanded="true" />
                 <element signature="e#679#680#0" expanded="true" />
@@ -186,14 +187,14 @@
         <option value="$PROJECT_DIR$/src/com/company/products/Product5.java" />
         <option value="$PROJECT_DIR$/src/com/company/products/Product6.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/vikacompany/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/vikacompany/products/Product.java" />
         <option value="$PROJECT_DIR$/src/com/vikacompany/products/Product1.java" />
         <option value="$PROJECT_DIR$/src/com/vikacompany/products/Product2.java" />
         <option value="$PROJECT_DIR$/src/com/vikacompany/products/Product3.java" />
         <option value="$PROJECT_DIR$/src/com/vikacompany/products/Product4.java" />
         <option value="$PROJECT_DIR$/src/com/vikacompany/products/Product5.java" />
         <option value="$PROJECT_DIR$/src/com/vikacompany/products/Product6.java" />
+        <option value="$PROJECT_DIR$/src/com/vikacompany/products/Product.java" />
+        <option value="$PROJECT_DIR$/src/com/vikacompany/Main.java" />
       </list>
     </option>
   </component>
@@ -563,12 +564,12 @@
       <created>1478062720578</created>
       <option name="number" value="Default" />
       <updated>1478062720578</updated>
-      <workItem from="1478062723802" duration="43928000" />
+      <workItem from="1478062723802" duration="44771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43928000" />
+    <option name="totallyTimeSpent" value="44771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1311" height="784" extended-state="6" />
@@ -667,43 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vikacompany/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="503" max-vertical-offset="1292">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="606" max-vertical-offset="1326">
-          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="62" />
-          <folding>
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
@@ -733,11 +697,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5566751" vertical-offset="0" max-vertical-offset="527">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
           <folding>
             <element signature="e#652#653#0" expanded="true" />
             <element signature="e#679#680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="62" />
+          <folding>
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="646">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vikacompany/products/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1360">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vikacompany/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47103274" vertical-offset="0" max-vertical-offset="1292">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
