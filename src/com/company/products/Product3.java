@@ -14,8 +14,9 @@ package com.company.products;
 
 public class Product3 extends Product {
 
-    public Product3() {
+    public Product3(int monthCount) {
         percent = 11.4;
+        this.monthCount=monthCount;
     }
 
     @Override

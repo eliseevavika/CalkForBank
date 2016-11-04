@@ -26,8 +26,6 @@ public class Main {
         System.out.println("Ваш выбор кредит с №: ");
 
 
-
-
         Product1 product1 = new Product1(6);
         Product2 product2 = new Product2(10);
         Product3 product3 = new Product3(60);
@@ -44,37 +42,22 @@ public class Main {
                 break;
 
             case 2:
-                System.out.println("Образовательный кредит (аннуитентная схема): " + product2.annuityPayment(100000, 10));
-                System.out.println();
-                System.out.println("Образовательный кредит (дифференцированная схема):");
-                System.out.println("Образовательный кредит: " + product2.differentiatPayment(100000, 10));
+                product1.printConditions(100000);
                 break;
             case 3:
-                System.out.println("Образовательный кредит (аннуитентная схема): " + product3.annuityPayment(100000, 60));
-                System.out.println();
-                System.out.println("Образовательный кредит (дифференцированная схема):");
-                System.out.println("Образовательный кредит: " + product3.differentiatPayment(100000, 60));
+                product1.printConditions(300000);
                 break;
 
             case 4:
-                System.out.println("Образовательный кредит (аннуитентная схема): " + product4.annuityPayment(300000, 144));
-                System.out.println();
-                System.out.println("Образовательный кредит (дифференцированная схема):");
-                System.out.println("Образовательный кредит: " + product4.differentiatPayment(300000, 144));
+                product1.printConditions(400000);
                 break;
 
             case 5:
-                System.out.println("Образовательный кредит (аннуитентная схема): " + product5.annuityPayment(300000, 252));
-                System.out.println();
-                System.out.println("Образовательный кредит (дифференцированная схема):");
-                System.out.println("Образовательный кредит: " + product5.differentiatPayment(400000, 252));
+                product1.printConditions(400000);
                 break;
 
             case 6:
-                System.out.println("Образовательный кредит (аннуитентная схема): " + product6.annuityPayment(300000, 144));
-                System.out.println();
-                System.out.println("Образовательный кредит (дифференцированная схема):");
-                System.out.println("Образовательный кредит: " + product6.differentiatPayment(200000, 50));
+                product1.printConditions(250000);
                 break;
             default:
                 System.out.println("Указан неверный продукт");

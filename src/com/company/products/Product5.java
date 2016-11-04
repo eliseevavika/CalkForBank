@@ -38,4 +38,13 @@ public class Product5 extends Product {
         }
         return true;
     }
+
+    @Override
+    public void printConditions(int sum) {
+        System.out.println("Образовательный кредит (аннуитентная схема): " + annuityPayment(sum));
+        System.out.println();
+        System.out.println("Образовательный кредит (дифференцированная схема):");
+        System.out.println("Образовательный кредит: " + differentiatPayment(sum));
+    }
+
 }

@@ -23,6 +23,7 @@ package com.company.products;
 public class Product4 extends Product {
 
     public Product4(int monthCount) {
+        this.monthCount=monthCount;
         if (monthCount < 120) {
             percent = 12.0;
         } else if (monthCount >= 120 && monthCount < 240) {
@@ -40,6 +41,14 @@ public class Product4 extends Product {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public void printConditions(int sum) {
+        System.out.println("Образовательный кредит (аннуитентная схема): " + annuityPayment(sum));
+        System.out.println();
+        System.out.println("Образовательный кредит (дифференцированная схема):");
+        System.out.println("Образовательный кредит: " + differentiatPayment(sum));
     }
 }
 

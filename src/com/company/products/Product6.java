@@ -8,7 +8,7 @@ package com.company.products;
  */
 public class Product6 extends Product {
 
-    public Product6() {
+    public Product6(int i) {
         percent = 15.5;
     }
 
@@ -22,5 +22,12 @@ public class Product6 extends Product {
           return  false;
         }
         return true;
+    }
+    @Override
+    public void printConditions(int sum) {
+        System.out.println("Образовательный кредит (аннуитентная схема): " + annuityPayment(sum));
+        System.out.println();
+        System.out.println("Образовательный кредит (дифференцированная схема):");
+        System.out.println("Образовательный кредит: " + differentiatPayment(sum));
     }
 }
