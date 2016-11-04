@@ -6,8 +6,6 @@ import com.company.products.*;
 import java.util.Scanner;
 
 /**
- * Класс служит для хранения объектов со свойствами
- *
  * @version 1.0
  * @autor Eliseeva Vika
  */
@@ -45,6 +43,7 @@ public class Main {
             case 2:
                 product2.printConditions(100000, 10);
                 break;
+
             case 3:
                 product3.printConditions(300000, 60);
                 break;
@@ -60,6 +59,7 @@ public class Main {
             case 6:
                 product6.printConditions(250000, 50);
                 break;
+
             default:
                 System.out.println("Указан неверный продукт");
                 break;
