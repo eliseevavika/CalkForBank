@@ -1,29 +1,29 @@
-package com.company.products;
+package com.vikacompany.products;
 
 
 public abstract class Product {
     /**
      * Проверка переданных параметров на Валидность
      *
-     * @param s          - сумма кредита
-     * @param monthCount -кол-во месяцев
-     * @return true - если параметры верны
+     * @param s  сумма кредита
+     * @param monthCount кол-во месяцев
+     * @return true если параметры верны
      */
     protected abstract boolean isValid(int s, int monthCount);
 
     /**
      * Расчет процента
      *
-     * @param monthCount -кол-во месяцев
-     * @return -процент
+     * @param monthCount кол-во месяцев
+     * @return процент
      */
     protected abstract double countPercent(int monthCount);
 
     /**
      * Полная печать расчета Пользовательского кредита по аннуитентной и дифференцированной схемам.
      *
-     * @param sum        - сумма кредита
-     * @param monthCount - кол-во месяцев
+     * @param sum сумма кредита
+     * @param monthCount  кол-во месяцев
      */
     public void printConditions(int sum, int monthCount) {
         double percent = countPercent(monthCount);
@@ -32,11 +32,13 @@ public abstract class Product {
     }
 
     /**
+     * Расчет и вывод аннуитентного платежа
+     * <p>
      * Аннуитетный платеж – вариант ежемесячного платежа по кредиту, когда размер ежемесячного платежа остаётся постоянным на всём периоде кредитования.
-     *
-     * @param s          -сумма кредита
-     * @param monthCount - кол-во месяцев
-     * @param percent    - процентная ставка
+     * </p>
+     * @param s сумма кредита
+     * @param monthCount кол-во месяцев
+     * @param percent процентная ставка
      */
     public void printAnnuityPayment(int s, int monthCount, double percent) {
         double p = percent / (12 * 100);
@@ -47,11 +49,13 @@ public abstract class Product {
     }
 
     /**
+     * Расчет и вывод диференцированного платежа
+     * <p>
      * Дифференцированный платеж – вариант ежемесячного платежа по кредиту, когда размер ежемесячного платежа по погашению кредита постепенно уменьшается к концу периода кредитования.
-     *
-     * @param s          -сумма кредита
-     * @param monthCount - кол-во месяцев
-     * @param percent    - процентная ставка
+     *</p>
+     * @param s сумма кредита
+     * @param monthCount кол-во месяцев
+     * @param percent  процентная ставка
      */
     public void printDifferentiatPayment(int s, int monthCount, double percent) {
         double p = percent / (12 * 100);

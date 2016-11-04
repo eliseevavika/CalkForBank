@@ -1,6 +1,6 @@
-package com.company;
+package com.vikacompany;
 
-import com.company.products.*;
+import com.vikacompany.products.*;
 
 
 import java.util.Scanner;
