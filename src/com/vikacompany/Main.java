@@ -35,29 +35,35 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
         int numberCredit = in.nextInt();
+        System.out.println("Введите сумму кредита:");
+        int sum = in.nextInt();
+        System.out.println("Введите срок кредита в месяцах:");
+        int monthCount = in.nextInt();
+
+
         switch (numberCredit) {
             case 1:
-                product1.printConditions(100000, 6);
+                product1.printConditions(sum, monthCount);
                 break;
 
             case 2:
-                product2.printConditions(100000, 10);
+                product2.printConditions(sum, monthCount);
                 break;
 
             case 3:
-                product3.printConditions(300000, 60);
+                product3.printConditions(sum, monthCount);
                 break;
 
             case 4:
-                product4.printConditions(400000, 144);
+                product4.printConditions(sum, monthCount);
                 break;
 
             case 5:
-                product5.printConditions(400000, 252);
+                product5.printConditions(sum, monthCount);
                 break;
 
             case 6:
-                product6.printConditions(250000, 50);
+                product6.printConditions(sum, monthCount);
                 break;
 
             default:
