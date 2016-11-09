@@ -47,7 +47,22 @@ public abstract class Product {
         double result = s * (p + p / (Math.pow(1 + p, monthCount) - 1));
         System.out.println("Аннуитентная схема: ");
         System.out.println(result);
+        System.out.println("Деталлизация расчета:");
+        double mainDebtresult = 0.0;
+        for (int i = 0; i < monthCount; i++) {
+            System.out.println(i + 1 + "-месяц: ");
+            System.out.println("Остаток кредита:");
+            double creditBalance = s - mainDebtresult;
+            System.out.println(creditBalance);
+            System.out.println("Проценты:");
+            double percentDetal = s * p;
+            System.out.println(percentDetal);
+            System.out.println("Основной долг:");
+            mainDebtresult = result - percentDetal;
+            System.out.println(mainDebtresult);
 
+
+        }
     }
 
     /**
@@ -63,8 +78,9 @@ public abstract class Product {
         double p = percent / (12 * 100);
         double principalDiff = (double) s / monthCount; // основной платеж
         System.out.println("Дифференцированная схема:");
+        System.out.println("Размер выплаты:");
         for (int i = 0; i < monthCount; i++) {
-            System.out.println("Размер выплаты:");
+
             double result = principalDiff + (s - principalDiff * i) * p;
             System.out.println(i + 1 + "-месяц: " + result);
         }

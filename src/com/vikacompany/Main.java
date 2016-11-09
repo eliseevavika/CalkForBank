@@ -37,8 +37,10 @@ public class Main {
         int numberCredit = in.nextInt();
         System.out.println("Введите сумму кредита:");
         int sum = in.nextInt();
+
         System.out.println("Введите срок кредита в месяцах:");
         int monthCount = in.nextInt();
+
 
 
         switch (numberCredit) {
