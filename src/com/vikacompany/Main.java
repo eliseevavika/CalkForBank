@@ -1,6 +1,6 @@
 package com.vikacompany;
 
-import com.vikacompany.products.*;
+import com.vikacompany.credits.*;
 
 
 import java.util.Scanner;
@@ -25,12 +25,12 @@ public class Main {
         System.out.println("Ваш выбор кредит с №: ");
 
 
-        Product1 product1 = new Product1();
-        Product2 product2 = new Product2();
-        Product3 product3 = new Product3();
-        Product4 product4 = new Product4();
-        Product5 product5 = new Product5();
-        Product6 product6 = new Product6();
+        ConsumerCredit consumerCredit = new ConsumerCredit();
+        CreditForEducation creditForEducation = new CreditForEducation();
+        CreditStateSupport creditStateSupport = new CreditStateSupport();
+        CreditForNewBuilding creditForNewBuilding = new CreditForNewBuilding();
+        CreditForFinishedHousing creditForFinishedHousing = new CreditForFinishedHousing();
+        CreditForCar creditForCar = new CreditForCar();
 
 
         Scanner in = new Scanner(System.in);
@@ -45,34 +45,58 @@ public class Main {
 
             switch (numberCredit) {
                 case 1:
-                    if (product1.isValid(sum, monthCount)) {
+                    if (consumerCredit.isValid(sum, monthCount)) {
                         isDataCorrect=true;
-                        product1.printConditions(sum, monthCount);
+                        consumerCredit.printConditions(sum, monthCount);
                     } else {
-                        product1.offerAlternativeConditions(sum, monthCount);
+                        consumerCredit.offerAlternativeConditions(sum, monthCount);
                     }
                     break;
 
                 case 2:
-                    product2.printConditions(sum, monthCount);
+                    if (creditForEducation.isValid(sum, monthCount)) {
+                        isDataCorrect=true;
+                        creditForEducation.printConditions(sum, monthCount);
+                    } else {
+                        creditForEducation.offerAlternativeConditions(sum, monthCount);
+                    }
                     break;
 
                 case 3:
-                    product3.printConditions(sum, monthCount);
+                    if (creditStateSupport.isValid(sum, monthCount)) {
+                        isDataCorrect=true;
+                        creditStateSupport.printConditions(sum, monthCount);
+                    } else {
+                        creditStateSupport.offerAlternativeConditions(sum, monthCount);
+                    }
                     break;
 
                 case 4:
-                    product4.printConditions(sum, monthCount);
+                    if (creditForNewBuilding.isValid(sum, monthCount)) {
+                        isDataCorrect=true;
+                        creditForNewBuilding.printConditions(sum, monthCount);
+                    } else {
+                        creditForNewBuilding.offerAlternativeConditions(sum, monthCount);
+                    }
                     break;
 
                 case 5:
-                    product5.printConditions(sum, monthCount);
+                    if (creditForFinishedHousing.isValid(sum, monthCount)) {
+                        isDataCorrect=true;
+                        creditForFinishedHousing.printConditions(sum, monthCount);
+                    } else {
+                        creditForFinishedHousing.offerAlternativeConditions(sum, monthCount);
+                    }
                     break;
 
                 case 6:
-                    product6.printConditions(sum, monthCount);
+                    if (creditForCar.isValid(sum, monthCount)) {
+                        isDataCorrect=true;
+                        creditForCar.printConditions(sum, monthCount);
+                    } else {
+                        creditForCar.offerAlternativeConditions(sum, monthCount);
+                    }
                     break;
-
                 default:
                     System.out.println("Указан неверный продукт");
                     break;
