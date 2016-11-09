@@ -35,44 +35,49 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
         int numberCredit = in.nextInt();
-        System.out.println("Введите сумму кредита:");
-        int sum = in.nextInt();
+        boolean isDataCorrect = false;
+        while (!isDataCorrect) {
+            System.out.println("Введите сумму кредита:");
+            int sum = in.nextInt();
 
-        System.out.println("Введите срок кредита в месяцах:");
-        int monthCount = in.nextInt();
+            System.out.println("Введите срок кредита в месяцах:");
+            int monthCount = in.nextInt();
 
+            switch (numberCredit) {
+                case 1:
+                    if (product1.isValid(sum, monthCount)) {
+                        isDataCorrect=true;
+                        product1.printConditions(sum, monthCount);
+                    } else {
+                        product1.offerAlternativeConditions(sum, monthCount);
+                    }
+                    break;
 
+                case 2:
+                    product2.printConditions(sum, monthCount);
+                    break;
 
-        switch (numberCredit) {
-            case 1:
-                product1.printConditions(sum, monthCount);
-                break;
+                case 3:
+                    product3.printConditions(sum, monthCount);
+                    break;
 
-            case 2:
-                product2.printConditions(sum, monthCount);
-                break;
+                case 4:
+                    product4.printConditions(sum, monthCount);
+                    break;
 
-            case 3:
-                product3.printConditions(sum, monthCount);
-                break;
+                case 5:
+                    product5.printConditions(sum, monthCount);
+                    break;
 
-            case 4:
-                product4.printConditions(sum, monthCount);
-                break;
+                case 6:
+                    product6.printConditions(sum, monthCount);
+                    break;
 
-            case 5:
-                product5.printConditions(sum, monthCount);
-                break;
-
-            case 6:
-                product6.printConditions(sum, monthCount);
-                break;
-
-            default:
-                System.out.println("Указан неверный продукт");
-                break;
+                default:
+                    System.out.println("Указан неверный продукт");
+                    break;
+            }
         }
+
     }
-
 }
-

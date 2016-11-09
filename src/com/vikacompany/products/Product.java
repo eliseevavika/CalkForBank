@@ -9,7 +9,7 @@ public abstract class Product {
      * @param monthCount кол-во месяцев
      * @return true если параметры верны
      */
-    protected abstract boolean isValid(int s, int monthCount);
+    public abstract boolean isValid(int s, int monthCount);
 
     /**
      * Расчет процента
@@ -26,12 +26,11 @@ public abstract class Product {
      * @param monthCount  кол-во месяцев
      */
     public void printConditions(int sum, int monthCount) {
-        if (isValid(sum, monthCount)) {
             double percent = countPercent(monthCount);
             printAnnuityPayment(sum, monthCount, percent);
             printDifferentiatPayment(sum, monthCount, percent);
         }
-    }
+
 
     /**
      * Расчет и вывод аннуитентного платежа

@@ -11,7 +11,7 @@ package com.vikacompany.products;
 public class Product5 extends Product {
 
 
-    protected boolean isValid(int s, int monthCount) {
+    public boolean isValid(int s, int monthCount) {
         if (s < 300000) {
             System.out.println("Сумма несоответствует допустимому интервалу");
             System.out.println("Мин. сумма кредита: 300 тыс.");

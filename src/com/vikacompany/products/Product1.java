@@ -1,7 +1,5 @@
 package com.vikacompany.products;
 
-import java.util.Scanner;
-
 /**
  * Потребительский кредит
  * <p>срок до 5 лет, ставка от 14.9%, сумма до 1.5 млн руб</p>
@@ -14,11 +12,8 @@ import java.util.Scanner;
 
 public class Product1 extends Product {
 
-    protected boolean isValid(int s, int monthCount) {
-        if (s < 15000 || s > 1500000||monthCount < 3|| monthCount > 60) {
-            continuedSelectConditions(s, monthCount);
-        }
-        return true;
+    public boolean isValid(int s, int monthCount) {
+        return s >= 15000 && s <= 1500000 && monthCount >= 3 && monthCount <= 60;
     }
 
 
@@ -32,60 +27,26 @@ public class Product1 extends Product {
         return 20;
     }
 
-    public boolean continueInput() {
-        Scanner in = new Scanner(System.in);
-        return in.nextInt() == 1;
-    }
 
-    public int continuedSelectConditions(int s, int monthCount) {
-        if (monthCount < 3 || monthCount < 3 & s<15000||monthCount < 3 & s>1500000 ) {
-            System.out.println("Минимальный срок кредита 3 месяца, от 15 тыс до 1.5 млн");
-            System.out.println("Можем вам предложить процентную ставку по кредиту от 3 до 24 месяцев, которая составляет 14.9 %");
-            System.out.println("Хотите выбрать другой срок кредита?");
-            System.out.println("Если да-введите 1");
-            System.out.println("Если нет-введите любую клавишу");
-            continueInput();
-            if (continueInput()) {
-                continueInputConditions();
-                isValid(s, monthCount);
-            }
-        }
 
-        if (monthCount >60 ||monthCount >60 & s<15000||monthCount>60 & s>1500000){
-            System.out.println("Максимальный срок кредита 60 месяцев, от 15 тыс до 1.5 млн");
-            System.out.println("Можем вам предложить процентную ставку по кредиту от 25 до 60 месяцев, которая составляет 15.9 %");
-            System.out.println("Хотите выбрать другой срок кредита?");
-            System.out.println("Если да-введите 1");
-            System.out.println("Если нет-введите любую клавишу");
-            continueInput();
-            if (continueInput()) {
-                continueInputConditions();
-                isValid(s, monthCount);
-            }
-        }
-        if(s<15000||s>1500000){
+    public void offerAlternativeConditions(int s, int monthCount) {
+
+        if (s < 15000 || s > 1500000) {
+            System.out.println("Введенная сумма не удовлетворяет условиям кредита");
             System.out.println("Минимальная сумма по данному кредиту-15 тыс, максимальная сумма-1.5 млн");
-            System.out.println("Хотите ввести другие параметры?");
-            System.out.println("Если да-введите 1");
-            System.out.println("Если нет-введите любую клавишу");
-            continueInput();
-            if (continueInput()) {
-                continueInputConditions();
-
-            }
-        }
-        return s;
-
         }
 
+        if (monthCount < 3) {
+            System.out.println("Минимальный срок кредита 3 месяца");
+            System.out.println("Можем вам предложить процентную ставку 14.9 % на срок от 3 до 24 месяцев");
+        }
 
+        if (monthCount > 60) {
+            System.out.println("Максимальный срок кредита 60 месяцев");
+            System.out.println("Можем вам предложить процентную ставку 15.9 % на срок от 25 до 60 месяцев");
+        }
 
-    public int continueInputConditions() {
-        System.out.println("Введите сумму кредита от 15 тыс до  1,5 млн");
-        Scanner in = new Scanner(System.in);
-        int sum = in.nextInt();
-        System.out.println("Введите срок кредита от 3 месяцев");
-        int monthCount = in.nextInt();
-        return s;
+        System.out.println("Введите параметры кредита снова:");
     }
+
 }

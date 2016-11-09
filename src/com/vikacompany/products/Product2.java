@@ -12,7 +12,7 @@ package com.vikacompany.products;
 public class Product2 extends Product {
 
     @Override
-    protected boolean isValid(int s, int monthCount) {
+    public boolean isValid(int s, int monthCount) {
         if (monthCount > 132) {
             System.out.println("Срок кредитования по данному продукту— не более 11 лет");
             return false;
