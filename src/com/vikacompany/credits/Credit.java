@@ -41,25 +41,32 @@ public abstract class Credit {
      * @param monthCount кол-во месяцев
      * @param percent процентная ставка
      */
+//
     public void printAnnuityPayment(int s, int monthCount, double percent) {
         double p = percent / (12 * 100);
         double result = s * (p + p / (Math.pow(1 + p, monthCount) - 1));
-        System.out.println("Аннуитентная схема: ");
-        System.out.println(result);
+        System.out.println("Аннуитентная схема: сумма месячного платежа:");
+        System.out.println(String.format("%(.2f",result));
         System.out.println("Деталлизация расчета:");
-        double mainDebtresult = 0.0;
+        double  mainDebtresult=0.0;
+        double creditBalance=s;
         for (int i = 0; i < monthCount; i++) {
             System.out.println(i + 1 + "-месяц: ");
-            System.out.println("Остаток кредита:");
-            double creditBalance = s - mainDebtresult;
-            System.out.println(creditBalance);
-            System.out.println("Проценты:");
-            double percentDetal = s * p;
-            System.out.println(percentDetal);
-            System.out.println("Основной долг:");
-            mainDebtresult = result - percentDetal;
-            System.out.println(mainDebtresult);
 
+
+            System.out.print("Остаток кредита:");
+            creditBalance = creditBalance - mainDebtresult;
+            System.out.println(String.format("%(.2f",creditBalance));
+
+                            System.out.print("Проценты:");
+            double percentDetal = creditBalance * p;
+            System.out.println(String.format("%(.2f",percentDetal));
+
+
+            System.out.print("Основной долг:");
+            mainDebtresult = result - percentDetal;
+            System.out.println(String.format("%(.2f",mainDebtresult));
+            System.out.println();
 
         }
     }
@@ -81,7 +88,7 @@ public abstract class Credit {
         for (int i = 0; i < monthCount; i++) {
 
             double result = principalDiff + (s - principalDiff * i) * p;
-            System.out.println(i + 1 + "-месяц: " + result);
+            System.out.println(i + 1 + "-месяц: "+ String.format("%(.2f",result));
         }
     }
 }
